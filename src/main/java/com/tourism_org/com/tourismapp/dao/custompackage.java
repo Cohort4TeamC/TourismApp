@@ -131,7 +131,7 @@ public class custompackage {
 		public int UpdateCustomPackage(CustomPackage customPackage) {
 	
 			try {		
-				String sql = "UPDATE custompackage SET `country`=?,  `country_location`=?, `hotel1`=?, `hotel2`=?, "
+				String sql = "UPDATE custompackage SET  `country_location`=?,  `country`=?, `hotel1`=?, `hotel2`=?, "
 				+ "`activity1`=?, `activity2`=? ,`number_of_people`=?, `start_date`=?, `end_date`=?, "
 				+ " `number_of_nights` =? WHERE `custompackage_id`=?";
 	        
@@ -140,8 +140,8 @@ public class custompackage {
 	        PreparedStatement stmt = conn.prepareStatement(sql);
 	        
 	        stmt.setInt(11, customPackage.getCp_id());
-	        stmt.setString(1, customPackage.getCountry());
-			stmt.setString(2, customPackage.getCountry_location());
+	        stmt.setString(2, customPackage.getCountry());
+			stmt.setString(1, customPackage.getCountry_location());
 			stmt.setString(3, customPackage.getHotel1());
 			stmt.setString(4, customPackage.getHotel2());
 			stmt.setString(5, customPackage.getActivity1());
