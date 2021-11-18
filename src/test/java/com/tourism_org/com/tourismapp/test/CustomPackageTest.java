@@ -14,7 +14,6 @@ import com.tourism_org.com.tourismapp.model.CustomPackage;
 
 public class CustomPackageTest {
 	
-	//Arrange
 	int expected = 6;
 	
 	@Test

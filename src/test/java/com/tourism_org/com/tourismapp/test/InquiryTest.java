@@ -14,7 +14,6 @@ public class InquiryTest {
 	@Test
 	public void testInquiry() {
 		
-		int expected = 1;
 		inquiry Inquiry = new inquiry();
 		
 		Inquiry.setEmail("rayyaan@gmail.com");

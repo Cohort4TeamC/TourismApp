@@ -21,7 +21,7 @@
 
 
 	@Path("customer")
-	//annotate produces and consumers here. and elete from the rest
+	
 	public class UserResource {
 		
 		private Gson gson = new Gson();
@@ -63,6 +63,7 @@
 				return Response
 						.status(200)
 						.entity(jsonString)
+						.header("Access-Control-Allow-Origin", "*")
 						.build();
 				
 			} else {

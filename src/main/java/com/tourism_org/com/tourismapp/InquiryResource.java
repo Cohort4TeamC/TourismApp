@@ -54,7 +54,7 @@ public class InquiryResource {
 					.build();
 		
 		} else {
-			Msg.put("Error","We have not received your inquiry. Please try again!");
+			Msg.put("Error", "We have not received your inquiry. Please try again!");
 			String jsonString = gson.toJson(Msg);
 			return Response  
 					.status(401)

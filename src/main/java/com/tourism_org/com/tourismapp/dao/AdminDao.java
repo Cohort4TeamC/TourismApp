@@ -15,8 +15,6 @@ import com.tourism_org.com.tourismapp.config.DbConnection;
 import com.tourism_org.com.tourismapp.dao.AdminDao;
 import com.tourism_org.com.tourismapp.model.admin;
 
-import javax.ws.rs.PathParam;
-
 public class AdminDao {
 	
 	private Logger logger = LogManager.getLogger(AdminDao.class);
@@ -36,7 +34,7 @@ public class AdminDao {
 
  
 	/**
-	 * add admin into the db
+	 * add admin into the database
 	 * @param Admin
 	 * @return
 	 */
@@ -121,7 +119,7 @@ public class AdminDao {
 
 
 	/**
-	 * login authorisation for admins.
+	 * login authorisation for Admins.
 	 * @param email
 	 * @param password
 	 * @return

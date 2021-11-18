@@ -8,6 +8,8 @@ import com.google.gson.Gson;
 
 import com.tourism_org.com.tourismapp.dao.PackageDao;
 import com.tourism_org.com.tourismapp.model.Package;
+
+
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
@@ -170,6 +172,35 @@ public class PackageResource {
 		}
 	}
 	
+	
+	@Path ("/search")
+	@GET
+	@Consumes (MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response searchpackage(String data) {
+		Gson gson = new Gson();
+		Package enter_search =gson.fromJson(data, Package.class);
+		
+		PackageDao packageDao = new PackageDao();
+		Package user = packageDao.searchPackage(enter_search.getCountry(), enter_search.getNumber_of_nights());
+		
+		if (user != null) {
+			String jsonString = gson.toJson(user);
+			return Response
+					.status(200)
+					.entity(jsonString)
+					.build();
+		
+		} else {
+			Map<String, String> msg = new HashMap<>();
+			msg.put("Error"," Invalid login information. Please try again!");
+			String jsonString = gson.toJson(msg);
+			return Response  
+					.status(401)
+					.entity(jsonString)
+					.build(); 
+		}
+	}
 //	@Path ("/search")
 //	@GET
 //	@Consumes(MediaType.APPLICATION_JSON) // request data type

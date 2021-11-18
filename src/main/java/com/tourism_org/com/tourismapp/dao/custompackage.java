@@ -87,7 +87,7 @@ public class custompackage {
 		 * @param user
 		 * @return
 		 */
-	public int addCustomPackage (CustomPackage customPackages) { 
+		public int addCustomPackage (CustomPackage customPackages) { 
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -120,34 +120,7 @@ public class custompackage {
 		}
 	}
 	
-	/**
-	 * update status of customised packages
-	 * @param customPackage
-	 * @return
-	 */
-//	public int UpdateStatusCustomPackage(CustomPackage customPackage) {
-//
-//		try {		
-//			String sql = "UPDATE custompackage SET `status`=? WHERE `cp_code`=?";
-//        
-//        Connection conn = DbConnection.getInstance().getConnection();
-//        
-//        PreparedStatement stmt = conn.prepareStatement(sql);
-//        
-//        stmt.setString(2, customPackage.getCp_code());
-//		stmt.setString(1, customPackage.getStatus());
-//		
-//	
-//		int response = stmt.executeUpdate();
-//		conn.close();
-//		return response;
-//		
-//	 } catch (Exception e) {
-//		e.printStackTrace();
-//		logger.error("SQL ERROR :  COULD NOT UPDATE THE CUSTOMIZED PACKAGE! - "+e.getMessage());
-//		return -1;
-//	}
-//}
+
 
 	
 		/**
@@ -216,35 +189,13 @@ public class custompackage {
 				return null;
 			}
 		}
-		
-		
-	
-//		public int CustomPackageStatus(CustomPackage customPackage) {
-//			
-//			try {		
-//				String sql = "UPDATE custompackage_appproval SET `status`=? WHERE `cp_code`=?";
-//	        
-//	        Connection conn = DbConnection.getInstance().getConnection();
-//	        
-//	        PreparedStatement stmt = conn.prepareStatement(sql);
-//	        
-//
-//	        stmt.setString(1, customPackage.getStatus());
-//			stmt.setString(2, customPackage.getCp_code());
-//			
-//			int response = stmt.executeUpdate();
-//			conn.close();
-//			return response;
-//			
-//		 } catch (Exception e) {
-//			e.printStackTrace();
-//			logger.error("SQL ERROR :  COULD NOT APPROVE THE CUSTOMIZED PACKAGE! - "+e.getMessage());
-//			return -1;
-//		}
-//	}
 
 		
-	
+	/**
+	 * Status of customized package
+	 * @param customPackage
+	 * @return
+	 */
 		public int StatusCustomPackage(CustomPackage customPackage) {
 			
 			try {		

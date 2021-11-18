@@ -136,6 +136,7 @@ public class AdminResource {
 		}
 	}
 	
+	
 	/**
 	 * Admin login
 	 * @param data
@@ -262,6 +263,7 @@ public class AdminResource {
 	 * @param admin_id
 	 * @return
 	 */
+	
 	@DELETE
 	@Path("/{admin_id}")
 	public Response deladmin (@PathParam("admin_id") int admin_id) {

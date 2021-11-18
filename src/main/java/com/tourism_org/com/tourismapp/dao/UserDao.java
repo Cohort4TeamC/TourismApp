@@ -4,7 +4,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
@@ -12,9 +11,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.tourism_org.com.tourismapp.config.DbConnection;
 import com.tourism_org.com.tourismapp.model.User;
-import com.tourism_org.com.tourismapp.model.admin;
 
-import javax.ws.rs.core.Response;
 
 import com.tourism_org.com.tourismapp.dao.UserDao;
 
@@ -24,7 +21,7 @@ import com.tourism_org.com.tourismapp.dao.UserDao;
     	private static Logger logger = LogManager.getLogger(UserDao.class);
 
     	/**
-    	 * Get a user from the db
+    	 * Get a user from the database
     	 */
 		public User getaUser (int id) {
 
@@ -42,7 +39,7 @@ import com.tourism_org.com.tourismapp.dao.UserDao;
 		
 		
 		/**
-		 * add user to the db
+		 * add user to the database
 		 * @param user
 		 * @return
 		 */
@@ -54,7 +51,7 @@ import com.tourism_org.com.tourismapp.dao.UserDao;
 				
 
 				String password = user.getPassword();
-			    String encryptedPassword =  Sha1Encrypt1 (password);
+			    String encryptedPassword =  Sha1Encrypt (password);
 				
 				
 				String sql = "INSERT INTO `customer` (`Fname`, `Lname`, `Phone`, `email`, `Address`,  `Srilankan`,  `Country`, `Nationality`,`PassportOrNIC`, `password`) "
@@ -89,70 +86,6 @@ import com.tourism_org.com.tourismapp.dao.UserDao;
 		 * @return
 		 */
 		public User userAuth(String email, String password) {
-			
-			try {
-			  Class.forName("com.mysql.cj.jdbc.Driver");
-		      Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/tourismapp","root","12345");
-		    
-		      String encryptedPassword = Sha1Encrypt (password);
-		      
-		      String sql ="Select * from `customer` where `Email` = ? and `password`=?";
-		      PreparedStatement stmt = conn.prepareStatement(sql);
-		      stmt.setString(1,email);
-		      stmt.setString (2, encryptedPassword);
-		      
-		      ResultSet resultSet = stmt.executeQuery();
-		      
-		      int rows =0;
-		      User User = new User();
-		      while (resultSet.next()) {
-		    	  
-		    	    rows ++;
-		    	
-					User.setId(resultSet.getInt("Id"));
-					User.setFname(resultSet.getString("Fname"));
-					User.setLname(resultSet.getString("Lname"));
-					User.setPhone(resultSet.getInt("Phone"));
-					User.setAddress(resultSet.getString("Address"));
-					User.setNationality(resultSet.getString("Nationality"));
-					User.setSrilankan(resultSet.getBoolean("Srilankan"));
-					User.setCountry(resultSet.getString("Country"));
-					User.setEmail(resultSet.getString("Email"));
-					User.setPassport(resultSet.getString("PassportOrNIC"));
-					User.setPassword(resultSet.getString("password"));
-		    	  
-		      }
-		      
-	      if (rows == 1) {
-		        	  
-		    	 Class.forName("com.mysql.cj.jdbc.Driver");
-		         Connection conn1=DriverManager.getConnection("jdbc:mysql://localhost:3306/tourismapp","root","12345");
-		    	    	 
-		         String sql1 = "INSERT INTO `customer_login` (`loginid`,`Email`, `password`)"
-		    	  				+ "VALUES (?,?,?);";
-		    	  		
-		  		PreparedStatement stmt1 = conn1.prepareStatement(sql1);
-	   	 
-				stmt1.setString(1, User.getLoginid());
-	   	  		stmt1.setString(2, User.getEmail());
-		  		stmt1.setString(3, User.getPassword());
-
-		    	int resultSet1 = stmt1.executeUpdate();		    	  		
-	    	  	return User;
-		  
-	      } else {
-	    	  return null;
-	      }
-	      
-		} catch (Exception e) {
-			e.printStackTrace();
-			 logger.info("SQL ERROR :  Invalid data for login - "+e.getMessage());
-			return null;
-		}
-
-	}
-		
-		public User bookings (String email, String password) {
 			
 			try {
 			  Class.forName("com.mysql.cj.jdbc.Driver");
@@ -408,24 +341,6 @@ import com.tourism_org.com.tourismapp.dao.UserDao;
 			}
 		}
 		
-		public String Sha1Encrypt1 (String tobeEncrpyted) {
-			   
-			try {
-			byte[] passwordArr = tobeEncrpyted.getBytes();
-		    
-		    MessageDigest sha1Encrypt = MessageDigest.getInstance("SHA-1");
-		    byte[] encryptPassword = sha1Encrypt.digest (passwordArr);
-		    
-		    String s = Base64.getEncoder().encodeToString(encryptPassword);
-		    
-		    return s;
-			
-			} 	catch (Exception e) { 
-				e.printStackTrace();
-				return null;
-			}   
-			
-		}
 		
-		}	
+	}	
    

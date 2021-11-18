@@ -5,14 +5,8 @@ import java.util.List;
 import java.util.Map;
 
 import com.google.gson.Gson;
-import com.tourism_org.com.tourismapp.dao.AdminDao;
-import com.tourism_org.com.tourismapp.dao.UserDao;
 import com.tourism_org.com.tourismapp.dao.custompackage;
-import com.tourism_org.com.tourismapp.dao.inquiryDao;
 import com.tourism_org.com.tourismapp.model.CustomPackage;
-import com.tourism_org.com.tourismapp.model.User;
-import com.tourism_org.com.tourismapp.model.admin;
-import com.tourism_org.com.tourismapp.model.inquiry;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -35,6 +29,7 @@ public class CustomPackageResource {
 	 * Get all the records
 	 * @return
 	 */
+	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getCustomPackagesFromDb()  {
@@ -55,6 +50,7 @@ public class CustomPackageResource {
 	 * @param cp_id
 	 * @return
 	 */
+	
 	@Path("/{custompackage_id}")
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
@@ -157,6 +153,7 @@ public class CustomPackageResource {
 	 * @param jsonData
 	 * @return
 	 */
+	
 	@PUT
 	@Consumes(MediaType.APPLICATION_JSON) 
 	@Produces(MediaType.APPLICATION_JSON)
@@ -197,6 +194,7 @@ public class CustomPackageResource {
 	 * @param cp_id
 	 * @return
 	 */
+	
 	@DELETE
 	@Path("/{custompackage_id}")
 	public Response delcustompackage (@PathParam("custompackage_id") int cp_id) {
@@ -231,10 +229,11 @@ public class CustomPackageResource {
 	}
 	
 	/**
-	 * 
+	 * Status of the package
 	 * @param jsonData
 	 * @return
 	 */
+	
 	@Path ("/status")
 	@PUT
 	@Consumes(MediaType.APPLICATION_JSON) 
