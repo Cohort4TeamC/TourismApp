@@ -11,9 +11,13 @@ import com.mysql.jdbc.Driver;
 public class DbConnection {
 	
 	private static Logger logger = LogManager.getLogger(DbConnection.class);
-	private static final String DB_URL="jdbc:mysql://localhost:3306/tourismapp";
-	private static final String DB_USER="root";
-	private static final String DB_PASSWORD ="12345";
+//	private static final String DB_URL="jdbc:mysql://localhost:3306/tourismapp";
+//	private static final String DB_USER="root";
+//	private static final String DB_PASSWORD ="12345";
+	
+	private static final String DB_URL="jdbc:mysql://us-cdbr-east-04.cleardb.com/heroku_7cb76cedbb960fc";
+	private static final String DB_USER="b9454b591f104a";
+	private static final String DB_PASSWORD ="2bae62a9";
 
 private static DbConnection newInstance = null;
 
