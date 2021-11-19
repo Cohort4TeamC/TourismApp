@@ -179,6 +179,7 @@ public class AdminDao {
       
 		} catch (Exception e) {
 			e.printStackTrace();
+			logger.error("Record Error : Incorrect Login Credentials - "+e.getMessage());
 			return null;
 		}
 	}
@@ -226,6 +227,7 @@ public class AdminDao {
 	      
 		} catch (Exception e) {
 			e.printStackTrace();
+			logger.error("Email Error : The email entered has not been registered. - "+e.getMessage());
 			return null;
 		}
 		
