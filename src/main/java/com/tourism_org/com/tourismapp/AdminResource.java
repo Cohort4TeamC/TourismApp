@@ -97,7 +97,6 @@ public class AdminResource {
 							@FormParam("admin_control") boolean admin_control,
 							@FormParam ("admin_password") String password) {
 		
-		//declare gson
 		Gson gson = new Gson();
 		
 		admin admin = new admin();

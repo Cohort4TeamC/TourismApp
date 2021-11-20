@@ -1,14 +1,18 @@
 package com.tourism_org.com.tourismapp;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import com.google.gson.Gson;
+import com.tourism_org.com.tourismapp.dao.AdminDao;
 import com.tourism_org.com.tourismapp.dao.inquiryDao;
+import com.tourism_org.com.tourismapp.model.admin;
 import com.tourism_org.com.tourismapp.model.inquiry;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.FormParam;
+import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -17,6 +21,25 @@ import javax.ws.rs.core.Response;
 
 @Path("inquiries")
 public class InquiryResource {
+		
+		private Gson gson = new Gson();
+		
+		@GET
+		@Produces(MediaType.APPLICATION_JSON)
+		public Response getInquriesFromDb() {
+			inquiryDao InquiryDao = new inquiryDao();
+			List<inquiry> inquiryList = InquiryDao.getInquiryFromDb();
+			
+			String jsonString = gson.toJson(inquiryList);
+			
+			return Response
+					.status(200)
+					.entity(jsonString)
+					.header("Access-Control-Allow-Origin", "*")
+					.build();
+		}
+	
+	
 	
 	/**
 	 * insert inquiry

@@ -5,8 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 import com.tourism_org.com.tourismapp.dao.AdminDao;
-import com.tourism_org.com.tourismapp.dao.PackageDao;
-import com.tourism_org.com.tourismapp.model.Package;
+
 import com.tourism_org.com.tourismapp.model.admin;
 
 public class AdminDaoTest {
