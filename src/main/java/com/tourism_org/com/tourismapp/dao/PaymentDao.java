@@ -2,7 +2,6 @@ package com.tourism_org.com.tourismapp.dao;
 
 import java.sql.Connection;
 
-
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -54,9 +53,9 @@ public class PaymentDao {
 
 public int addPayment (Payment payment) { 
 	
+	 Connection connection = DbConnection.getInstance().getConnection();
+	
 	try {
-		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/tourismapp","root","Root@1234");
 		
 		String sql = "INSERT INTO `payment` (`Payment_id`, `cardType`, `cardNo`, `CVV`, `expDate`, `paymentDate`,`amountPaid`)"
 				+ "VALUES (?, ?, ?, ?, ?, ?, ?);";
@@ -71,7 +70,7 @@ public int addPayment (Payment payment) {
 		stmt.setFloat(7, payment.getAmountPaid());
 		
 
-int response = stmt.executeUpdate();
+		int response = stmt.executeUpdate();
 		return response;
 		
      	} catch (Exception e) {
@@ -129,10 +128,10 @@ public List<Payment> getPaymentFromDb(){
 
 	public int payment (Payment payment) { 
 		
+		 Connection connection = DbConnection.getInstance().getConnection();
+		
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/tourismapp","root","Root@1234");
-			
+
 			String sql = "INSERT INTO `payment` (`Payment_id`, `cardType`, `cardNo`, `cvv`,  `expDate`,  `paymentDate`, `amountPaid`) "
 					+ "VALUES ( ?, ?, ?, ?, ?, ?, ?);";
 			

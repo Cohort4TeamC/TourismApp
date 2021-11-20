@@ -56,9 +56,9 @@ public class FeedbackDao {
 
 	public int addFeedback (Feedback feedback) { 
 		
+		 Connection connection = DbConnection.getInstance().getConnection();
+		
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/tourismapp","root","Root@1234");
 			
 			String sql = "INSERT INTO `feedback` (`feedback_id`, `duration`, `weekly_schedule`, `activites`,  `package_price`,  `description`, `feedback`) "
 					+ "VALUES ( ?, ?, ?, ?, ?, ?, ?);";

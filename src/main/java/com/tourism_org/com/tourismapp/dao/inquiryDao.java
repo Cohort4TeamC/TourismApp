@@ -21,8 +21,6 @@ public class inquiryDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 
-		    
-		    //Prepare SQL query.
 			String sql = "INSERT INTO `inquiry` ( `email`,`inquiry_desc`)"
 					+ "VALUES (?, ?);";
 			

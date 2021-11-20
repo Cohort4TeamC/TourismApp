@@ -108,7 +108,7 @@ public class PackageDao {
 		 Connection connection = DbConnection.getInstance().getConnection();
 			
 		 try {		
-		  Class.forName("com.mysql.cj.jdbc.Driver");
+
 	      String sql ="delete from package where package_code = ?";
 	      PreparedStatement stmt = connection.prepareStatement(sql);
 	      stmt.setInt(1, package_code);
@@ -211,86 +211,57 @@ public class PackageDao {
 		}
 	 }
      
-	 public Package searchPackage(String country, String number_of_nights) {
-
-			Connection connection = DbConnection.getInstance().getConnection();
-			
-			try {
-				Class.forName("com.mysql.cj.jdbc.Driver");
-		  
-		      
-		      String sql ="SELECT * from package where  `country` = ? and `number_of_nights` =? ";
-		      PreparedStatement stmt = connection.prepareStatement(sql);
-		      stmt.setString(1,country);
-		      stmt.setString (2, number_of_nights);
-		      
-		      ResultSet resultSet = stmt.executeQuery();
-		      
-		      int rows =0;
-		      Package user = new Package();
-		      while (resultSet.next()) {
-		    	  
-		    	    rows ++;
-		    	
-					user.setPackage_code(resultSet.getInt("package_code"));
-					user.setPackage_name(resultSet.getString("package_name"));
-					user.setCountry(resultSet.getString("country"));
-					user.setCountry_area1(resultSet.getString("country_area1"));
-					user.setCountry_area2(resultSet.getString("country_area2"));
-					user.setNumber_of_nights(resultSet.getString("number_of_nights"));
-					user.setWeekly_schedule(resultSet.getString("weekly_schedule"));
-					user.setStart_date(resultSet.getString("start_date"));
-					user.setEnd_date(resultSet.getString("end_date"));
-					user.setHotel1(resultSet.getString("hotel1"));
-					user.setHotel2(resultSet.getString("hotel2"));
-					user.setActivity1(resultSet.getString("activity1"));
-					user.setActivity2(resultSet.getString("activity2"));
-					user.setDescription(resultSet.getString("description"));
-					user.setPrice_per_person(resultSet.getString("price_per_person"));
-		      }
-		      
-		      if (rows == 1) {
-		    	  
-		    	  Connection connection1 = DbConnection.getInstance().getConnection(); 
-		    	  Class.forName("com.mysql.cj.jdbc.Driver");
-		        
-		    	 
-//		    	 String sql1 = "INSERT INTO `admin_login` (`email`, `admin_password`)"
-//		  				+ "VALUES ( ?, ?);";
+//	 public Package searchPackage(String country, String number_of_nights) {
+//
+//			Connection connection = DbConnection.getInstance().getConnection();
+//			
+//			try {
+//		      
+//		      String sql ="SELECT * from package where  `country` = ? and `number_of_nights` =? ";
+//		      PreparedStatement stmt = connection.prepareStatement(sql);
+//		      stmt.setString(1,country);
+//		      stmt.setString (2, number_of_nights);
+//		      
+//		      ResultSet resultSet = stmt.executeQuery();
+//		      
+//		      int rows =0;
+//		      Package user = new Package();
+//		      while (resultSet.next()) {
 //		    	  
-//		    	  String sql1 = "Select * from package;";
-//		  		
-//		  		PreparedStatement stmt1 = connection1.prepareStatement(sql1);
-//		  		stmt.setInt(15, user.getPackage_code());
-//				stmt.setString(1, user.getPackage_name());
-//				stmt.setString(2, user.getCountry());
-//				stmt.setString(3, user.getCountry_area1());
-//				stmt.setString(4, user.getCountry_area2());
-//				stmt.setString(5, user.getNumber_of_nights());
-//				stmt.setString(6, user.getWeekly_schedule());
-//				stmt.setString(7, user.getStart_date());
-//				stmt.setString(8, user.getEnd_date());
-//				stmt.setString(9, user.getHotel1());
-//				stmt.setString(10, user.getHotel2());
-//				stmt.setString(11, user.getActivity1());
-//				stmt.setString(12, user.getActivity2());
-//				stmt.setString(13, user.getDescription());
-//				stmt.setString(14, user.getPrice_per_person());
-				
-
-		  		//int res1 = stmt1.executeUpdate();
-		  		
-		    	 return user;
-		    	  
-		      } else {
-		    	  return null;
-		      }
-		      
-				} catch (Exception e) {
-					e.printStackTrace();
-					return null;
-				}
-			}	
+//		    	    rows ++;
+//		    	
+//					user.setPackage_code(resultSet.getInt("package_code"));
+//					user.setPackage_name(resultSet.getString("package_name"));
+//					user.setCountry(resultSet.getString("country"));
+//					user.setCountry_area1(resultSet.getString("country_area1"));
+//					user.setCountry_area2(resultSet.getString("country_area2"));
+//					user.setNumber_of_nights(resultSet.getString("number_of_nights"));
+//					user.setWeekly_schedule(resultSet.getString("weekly_schedule"));
+//					user.setStart_date(resultSet.getString("start_date"));
+//					user.setEnd_date(resultSet.getString("end_date"));
+//					user.setHotel1(resultSet.getString("hotel1"));
+//					user.setHotel2(resultSet.getString("hotel2"));
+//					user.setActivity1(resultSet.getString("activity1"));
+//					user.setActivity2(resultSet.getString("activity2"));
+//					user.setDescription(resultSet.getString("description"));
+//					user.setPrice_per_person(resultSet.getString("price_per_person"));
+//		      }
+//		      
+//		      if (rows == 1) {
+//		    	  
+//		    	  Connection connection1 = DbConnection.getInstance().getConnection(); 
+//
+//		    	 return user;
+//		    	  
+//		      } else {
+//		    	  return null;
+//		      }
+//		      
+//				} catch (Exception e) {
+//					e.printStackTrace();
+//					return null;
+//				}
+//			}	
 	 
 //public Package searchPackage(String country,String number_of_nights) /** throws SQLException */ {
 //		 

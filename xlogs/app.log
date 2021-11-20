@@ -294,3 +294,239 @@
 11:31:34.163 [main] INFO  com.tourism_org.com.tourismapp.config.DbConnection - DB SUCCESS :  Connection Successful
 13:52:24.512 [main] INFO  com.tourism_org.com.tourismapp.config.DbConnection - DB SUCCESS :  Connection Successful
 13:52:24.512 [main] INFO  com.tourism_org.com.tourismapp.config.DbConnection - DB SUCCESS :  Connection Successful
+12:06:04.291 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1267042315 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:06:04.291 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1267042315 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:06:04.318 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - SQL ERROR :  Could not insert data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:06:04.318 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - SQL ERROR :  Could not insert data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:06:05.954 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1627883152 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:06:05.954 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1627883152 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:06:05.959 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Record Error : Incorrect Login Credentials - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:06:05.959 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Record Error : Incorrect Login Credentials - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:06:08.147 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 677217562 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:06:08.147 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 677217562 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:06:08.235 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Email Error : The email entered has not been registered. - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:06:08.235 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Email Error : The email entered has not been registered. - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:06:10.930 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 467632528 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:06:10.930 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 467632528 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:06:10.936 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - DB ERROR :  Could not access data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:06:10.936 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - DB ERROR :  Could not access data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:06:14.086 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 26357357 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:06:14.086 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 26357357 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:08:26.643 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 413373997 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:08:26.643 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 413373997 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:08:26.679 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - SQL ERROR :  Could not insert data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:08:26.679 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - SQL ERROR :  Could not insert data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:08:28.335 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1576277927 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:08:28.335 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1576277927 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:08:28.345 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Record Error : Incorrect Login Credentials - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:08:28.345 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Record Error : Incorrect Login Credentials - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:08:30.465 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1250582716 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:08:30.465 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1250582716 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:08:30.529 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Email Error : The email entered has not been registered. - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:08:30.529 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Email Error : The email entered has not been registered. - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:08:33.345 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1959708563 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:08:33.345 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1959708563 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:08:33.348 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - DB ERROR :  Could not access data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:08:33.348 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - DB ERROR :  Could not access data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:08:36.660 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 296541232 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:08:36.660 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 296541232 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:10:29.738 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 413373997 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:10:29.738 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 413373997 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:10:29.782 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - SQL ERROR :  Could not insert data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:10:29.782 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - SQL ERROR :  Could not insert data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:10:31.640 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1576277927 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:10:31.640 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1576277927 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:10:31.652 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Record Error : Incorrect Login Credentials - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:10:31.652 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Record Error : Incorrect Login Credentials - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:10:33.784 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1250582716 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:10:33.784 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1250582716 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:10:33.836 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Email Error : The email entered has not been registered. - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:10:33.836 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Email Error : The email entered has not been registered. - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:10:36.501 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1959708563 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:10:36.501 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1959708563 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:10:36.510 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - DB ERROR :  Could not access data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:10:36.510 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - DB ERROR :  Could not access data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:10:39.735 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 296541232 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:10:39.735 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 296541232 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:12:16.693 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 293474277 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:12:16.693 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 293474277 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:12:16.737 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - SQL ERROR :  Could not insert data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:12:16.737 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - SQL ERROR :  Could not insert data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:12:18.424 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 789982400 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:12:18.424 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 789982400 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:12:18.430 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Record Error : Incorrect Login Credentials - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:12:18.430 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Record Error : Incorrect Login Credentials - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:12:20.535 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 975001918 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:12:20.535 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 975001918 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:12:20.596 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Email Error : The email entered has not been registered. - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:12:20.596 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Email Error : The email entered has not been registered. - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:12:23.353 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 261845810 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:12:23.353 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 261845810 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:12:23.360 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - DB ERROR :  Could not access data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:12:23.360 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - DB ERROR :  Could not access data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:12:26.549 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1442038800 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:12:26.549 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1442038800 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:13:08.384 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1564892747 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:13:08.384 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1564892747 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:13:08.439 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - SQL ERROR :  Could not insert data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:13:08.439 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - SQL ERROR :  Could not insert data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:13:10.206 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1690050988 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:13:10.206 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1690050988 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:13:10.212 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Record Error : Incorrect Login Credentials - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:13:10.212 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Record Error : Incorrect Login Credentials - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:13:12.444 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1076966140 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:13:12.444 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1076966140 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:13:12.499 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Email Error : The email entered has not been registered. - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:13:12.499 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Email Error : The email entered has not been registered. - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:13:15.448 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 862025017 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:13:15.448 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 862025017 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:13:15.450 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - DB ERROR :  Could not access data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:13:15.450 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - DB ERROR :  Could not access data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:13:18.985 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 701487403 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:13:18.985 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 701487403 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:14:11.703 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 413373997 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:14:11.703 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 413373997 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:14:11.725 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - SQL ERROR :  Could not insert data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:14:11.725 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - SQL ERROR :  Could not insert data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:14:13.445 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1576277927 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:14:13.445 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1576277927 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:14:13.454 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Record Error : Incorrect Login Credentials - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:14:13.454 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Record Error : Incorrect Login Credentials - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:14:15.773 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1250582716 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:14:15.773 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1250582716 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:14:15.818 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Email Error : The email entered has not been registered. - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:14:15.818 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Email Error : The email entered has not been registered. - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:14:18.586 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1959708563 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:14:18.586 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1959708563 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:14:18.595 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - DB ERROR :  Could not access data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:14:18.595 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - DB ERROR :  Could not access data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:14:21.980 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 296541232 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:14:21.980 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 296541232 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:16:02.547 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 754072705 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:16:02.547 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 754072705 DB ERROR :  Connection failed - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+12:16:02.583 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - DB ERROR :  Could not access data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+12:16:02.583 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - DB ERROR :  Could not access data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null

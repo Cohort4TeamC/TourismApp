@@ -45,10 +45,9 @@ import com.tourism_org.com.tourismapp.dao.UserDao;
 		 */
 		public int addUser (User user) { 
 			
+			 Connection connection = DbConnection.getInstance().getConnection();
+			
 			try {
-				Class.forName("com.mysql.cj.jdbc.Driver");
-				Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/tourismapp","root","12345");
-				
 
 				String password = user.getPassword();
 			    String encryptedPassword =  Sha1Encrypt (password);
@@ -87,14 +86,13 @@ import com.tourism_org.com.tourismapp.dao.UserDao;
 		 */
 		public User userAuth(String email, String password) {
 			
+			 Connection connection = DbConnection.getInstance().getConnection();
 			try {
-			  Class.forName("com.mysql.cj.jdbc.Driver");
-		      Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/tourismapp","root","12345");
-		    
+
 		      String encryptedPassword = Sha1Encrypt (password);
 		      
 		      String sql ="Select * from `customer` where `Email` = ? and `password`=?";
-		      PreparedStatement stmt = conn.prepareStatement(sql);
+		      PreparedStatement stmt = connection.prepareStatement(sql);
 		      stmt.setString(1,email);
 		      stmt.setString (2, encryptedPassword);
 		      
@@ -122,8 +120,8 @@ import com.tourism_org.com.tourismapp.dao.UserDao;
 		      
 	      if (rows == 1) {
 		        	  
-		    	 Class.forName("com.mysql.cj.jdbc.Driver");
-		         Connection conn1=DriverManager.getConnection("jdbc:mysql://localhost:3306/tourismapp","root","12345");
+	    	  Connection conn1 = DbConnection.getInstance().getConnection();
+
 		    	    	 
 		         String sql1 = "INSERT INTO `customer_login` (`loginid`,`Email`, `password`)"
 		    	  				+ "VALUES (?,?,?);";
@@ -203,7 +201,7 @@ import com.tourism_org.com.tourismapp.dao.UserDao;
 			 Connection connection = DbConnection.getInstance().getConnection();	
 			
 			 try {		
-			  Class.forName("com.mysql.cj.jdbc.Driver");
+
 		      String sql ="delete from customer where Id = ?";
 		      PreparedStatement stmt = connection.prepareStatement(sql);
 		      stmt.setInt(1,id);
@@ -230,11 +228,11 @@ import com.tourism_org.com.tourismapp.dao.UserDao;
 		
 			String sql = "Select * from `customer`;" ;
 			
+			 Connection connection = DbConnection.getInstance().getConnection();
+			
 			try {
-				Class.forName("com.mysql.cj.jdbc.Driver");
-				Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/tourismapp","root","12345");
 					
-				PreparedStatement stmt = conn.prepareStatement(sql);
+				PreparedStatement stmt = connection.prepareStatement(sql);
 				
 				ResultSet resultSet = stmt.executeQuery();
 							
@@ -271,13 +269,14 @@ import com.tourism_org.com.tourismapp.dao.UserDao;
 		 * @return
 		 */
 		public User forgotpassword(String email) {
+			
+			 Connection connection = DbConnection.getInstance().getConnection();
+			 
 			try {
-				  Class.forName("com.mysql.cj.jdbc.Driver");
-			      Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/tourismapp","root","12345");
 			      
 			      String sql ="Select * from `customer` where `Email` = ?";
 			     
-			      PreparedStatement stmt = conn.prepareStatement(sql);
+			      PreparedStatement stmt = connection.prepareStatement(sql);
 			      stmt.setString(1,email);
 			      
 			      ResultSet resultSet = stmt.executeQuery();

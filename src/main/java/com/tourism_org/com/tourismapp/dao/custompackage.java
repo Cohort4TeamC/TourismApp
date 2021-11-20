@@ -47,11 +47,11 @@ public class custompackage {
 	
 		String sql = "Select * from `custompackage`;" ;
 		
+		 Connection connection = DbConnection.getInstance().getConnection();
+		
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/tourismapp","root","12345");
 				
-			PreparedStatement stmt = conn.prepareStatement(sql);
+			PreparedStatement stmt = connection.prepareStatement(sql);
 			
 			ResultSet resultSet = stmt.executeQuery();
 						
@@ -70,7 +70,7 @@ public class custompackage {
 					customPackages.setNumber_of_nights(resultSet.getInt("number_of_nights"));
 					cpList.add(customPackages);
 				}
-				conn.close();
+				connection.close();
 				return cpList;
 		
 			
@@ -89,10 +89,10 @@ public class custompackage {
 		 */
 		public int addCustomPackage (CustomPackage customPackages) { 
 		
+			 Connection connection = DbConnection.getInstance().getConnection();
+			 
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/tourismapp","root","12345");
-			
+
 			String sql = "INSERT INTO `custompackage` (`country`,  `country_location`, `hotel1`, `hotel2`, `activity1`, `activity2` ,`number_of_people`,"
 				+ " `start_date`, `end_date`,  `number_of_nights`)"
 					+ "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
@@ -173,7 +173,6 @@ public class custompackage {
 			 Connection connection = DbConnection.getInstance().getConnection();	
 			
 			 try {		
-			  Class.forName("com.mysql.cj.jdbc.Driver");
 				 
 		      String sql ="Delete from custompackage where `custompackage_id` = ?";
 		      PreparedStatement stmt = connection.prepareStatement(sql);

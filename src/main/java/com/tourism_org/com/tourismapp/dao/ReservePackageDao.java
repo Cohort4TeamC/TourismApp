@@ -92,7 +92,7 @@ private Logger logger = LogManager.getLogger(PackageDao.class);
 		 Connection connection = DbConnection.getInstance().getConnection();
 			
 		 try {		
-		  Class.forName("com.mysql.cj.jdbc.Driver");
+
 	      String sql ="delete from reserve_packages where reserve_id = ?";
 	      PreparedStatement stmt = connection.prepareStatement(sql);
 	      stmt.setInt(1, reserve_id);

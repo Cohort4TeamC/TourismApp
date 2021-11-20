@@ -32,6 +32,7 @@ public class AdminDao {
 		return admin;
 	}
 
+
  
 	/**
 	 * add admin into the database
@@ -43,7 +44,6 @@ public class AdminDao {
 	Connection connection = DbConnection.getInstance().getConnection();
 	
 	try {
-		Class.forName("com.mysql.cj.jdbc.Driver");
 		
 	    String password = Admin.getPassword();
 	    String encryptedPassword =  Sha1Encrypt (password);
@@ -129,8 +129,7 @@ public class AdminDao {
 	Connection connection = DbConnection.getInstance().getConnection();
 	
 	try {
-		Class.forName("com.mysql.cj.jdbc.Driver");
-   
+		
       String encryptedPassword = Sha1Encrypt (password);
       
       String sql ="Select * from `admin` where `email` = ? and `admin_password`=?";
@@ -159,9 +158,8 @@ public class AdminDao {
       if (rows == 1) {
     	  
     	  Connection connection1 = DbConnection.getInstance().getConnection(); 
-    	  Class.forName("com.mysql.cj.jdbc.Driver");
         
-    	 
+
     	 String sql1 = "INSERT INTO `admin_login` (`email`, `admin_password`)"
   				+ "VALUES ( ?, ?);";
   		
@@ -195,7 +193,6 @@ public class AdminDao {
 		Connection connection = DbConnection.getInstance().getConnection();
 		
 		try {
-		  Class.forName("com.mysql.cj.jdbc.Driver");
 		  
 	      String sql ="Select * from `admin` where `email` = ?";
 	      PreparedStatement stmt = connection.prepareStatement(sql);
@@ -246,7 +243,6 @@ public class AdminDao {
 	String sql = "SELECT * FROM `admin`;";
 	
 	try {
-	  Class.forName("com.mysql.cj.jdbc.Driver");
     
 	  PreparedStatement stmt = connection.prepareStatement(sql);
 	  ResultSet resultSet = stmt.executeQuery();
@@ -271,8 +267,8 @@ public class AdminDao {
 			logger.error("DB ERROR :  Could not access data - "+e.getMessage());
 			return null;
 	}
-
 }
+
 	
 	/**
 	 * delete admin from the Database
@@ -280,8 +276,8 @@ public class AdminDao {
 	public admin deladmin(int admin_id) {
 
 		 Connection connection = DbConnection.getInstance().getConnection();	
-		try {		
-		  Class.forName("com.mysql.cj.jdbc.Driver");
+		
+		 try {		
 				
 	      
 	      String sql ="delete from admin where admin_id = ?";
@@ -338,5 +334,5 @@ public class AdminDao {
 			return -1;
 		}
 	}
-	
 }
+	
