@@ -1,3 +1,3 @@
-20:24:23.954 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 2079961240 DB ERROR :  Connection failed - Communications link failure
+13:38:33.175 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 691779749 DB ERROR :  Connection failed - Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
