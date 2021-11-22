@@ -1,15 +1,2 @@
-13:38:33.175 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 691779749 DB ERROR :  Connection failed - Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-17:16:38.287 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1564892747 DB ERROR :  Connection failed - Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-17:16:38.322 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - SQL ERROR :  Could not insert data - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
-17:16:40.581 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1690050988 DB ERROR :  Connection failed - Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-17:16:40.587 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Record Error : Incorrect Login Credentials - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
-17:16:43.549 [main] ERROR com.tourism_org.com.tourismapp.config.DbConnection - 1076966140 DB ERROR :  Connection failed - Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-17:16:43.559 [main] ERROR com.tourism_org.com.tourismapp.dao.AdminDao - Email Error : The email entered has not been registered. - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+16:17:08.971 [main] INFO  com.tourism_org.com.tourismapp.config.DbConnection - DB SUCCESS :  Connection Successful
+16:17:09.323 [main] INFO  com.tourism_org.com.tourismapp.dao.UserDao - SQL ERROR :  Could not insert data - Duplicate entry 'sophie98@gmail.com-311456717' for key 'Email'

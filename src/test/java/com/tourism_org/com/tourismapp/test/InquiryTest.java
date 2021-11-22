@@ -27,7 +27,7 @@ public class InquiryTest {
 			
 	}
 	
-	private int expected =8;
+	private int expected =7;
 	
 	@Test
 	public void testGetInquiries() {
