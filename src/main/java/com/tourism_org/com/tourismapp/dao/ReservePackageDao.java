@@ -144,16 +144,4 @@ private Logger logger = LogManager.getLogger(PackageDao.class);
 	}
 	
 	
-
-	private List<ReservePackage> LogFiles() {
-	//Log
-	logger.fatal("This is a FATAL log");
-	logger.error("This is a ERROR log");
-	logger.warn("This is a WARN log");
-	logger.info("This is a INFO log");
-	logger.debug("This is a DEBUG log");
-	logger.trace("This is a TRACE log");
-	
-	return reservepackageList;
 	}
-}

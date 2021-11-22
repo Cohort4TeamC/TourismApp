@@ -10,7 +10,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.tourism_org.com.tourismapp.config.DbConnection;
-import com.tourism_org.com.tourismapp.model.admin;
 import com.tourism_org.com.tourismapp.model.inquiry;
 
 public class inquiryDao {

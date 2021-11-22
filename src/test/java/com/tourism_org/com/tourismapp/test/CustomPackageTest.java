@@ -51,14 +51,14 @@ public class CustomPackageTest {
 	
 	}
 	
-//	@Test
-//	public void testdelCustomPackage() {
-//		
-//		int cp_id =325;
-//		
-//		custompackage cpDao= new custompackage();
-//		CustomPackage actual = cpDao.delCustomPackage(cp_id);
-//		
-//		assertNotNull(actual);
-//	}
+	@Test
+	public void testdelCustomPackage() {
+		
+		int cp_id =325;
+		
+		custompackage cpDao= new custompackage();
+		CustomPackage actual = cpDao.delCustomPackage(cp_id);
+		
+		assertNotNull(actual);
+	}
 }

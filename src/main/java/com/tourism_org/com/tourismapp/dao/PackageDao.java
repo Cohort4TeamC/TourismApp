@@ -1,8 +1,6 @@
 package com.tourism_org.com.tourismapp.dao;
 
 import java.sql.Connection;
-
-//import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -14,7 +12,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.tourism_org.com.tourismapp.config.DbConnection;
 import com.tourism_org.com.tourismapp.model.Package;
-import com.tourism_org.com.tourismapp.model.admin; 
+
 
 
 public class PackageDao {

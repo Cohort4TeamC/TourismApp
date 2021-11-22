@@ -30,28 +30,28 @@ import com.tourism_org.com.tourismapp.model.User;
 			assertNotNull(actual);
 		}
 
-//		@Test
-//		public void testLogin() {
-//			
-//			String email ="olivia@gmail.com";
-//			String password ="olive123";
-//			
-//			UserDao userDao = new UserDao();
-//			User actual =userDao.userAuth(email, password);
-//			
-//			assertNotNull(actual);
-//		}
+		@Test
+		public void testLogin() {
+			
+			String email ="olivia@gmail.com";
+			String password ="olive123";
+			
+			UserDao userDao = new UserDao();
+			User actual =userDao.userAuth(email, password);
+			
+			assertNotNull(actual);
+		}
 		
-//		@Test
-//		public void testForgotPassword() {
-//			
-//			String email ="harith@yahoo.com";
-//			
-//			UserDao userDao = new UserDao();
-//			User actual =userDao.forgotpassword(email);
-//			
-//			assertNotNull(actual);
-//		}
+		@Test
+		public void testForgotPassword() {
+			
+			String email ="harith@yahoo.com";
+			
+			UserDao userDao = new UserDao();
+			User actual =userDao.forgotpassword(email);
+			
+			assertNotNull(actual);
+		}
 		
 		@Test
 		public void AddUser() {
