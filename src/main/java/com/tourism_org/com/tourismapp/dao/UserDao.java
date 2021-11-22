@@ -238,7 +238,7 @@ import com.tourism_org.com.tourismapp.dao.UserDao;
 							
 				while(resultSet.next()) {
 					User user = new User();
-					user.setId(resultSet.getInt("id"));
+					user.setId(resultSet.getInt("customer_id"));
 					user.setFname(resultSet.getString("Fname"));
 					user.setLname(resultSet.getString("Lname"));
 					user.setPhone(resultSet.getInt("Phone"));
