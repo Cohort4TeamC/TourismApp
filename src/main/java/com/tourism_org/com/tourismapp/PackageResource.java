@@ -37,7 +37,7 @@ public class PackageResource {
 		return Response
 				.status(200)
 				.entity(jsonString)
-				.header("Access-Control-Allow-Origin", "*")
+				/*.header("Access-Control-Allow-Origin", "*")*/
 				.build();
 	}
 	
@@ -52,7 +52,7 @@ public class PackageResource {
 			return Response
 					.status(200)
 					.entity(jsonString)
-					.header("Access-Control-Allow-Origin", "*")
+					/*.header("Access-Control-Allow-Origin", "*")*/
 					.build();
 		} else {
 			Map<String, String> errorMsg = new HashMap<>();
@@ -88,7 +88,7 @@ public class PackageResource {
 			return Response
 					.status(200)
 					.entity(jsonString)
-					.header("Access-Control-Allow-Origin", "*")
+					/*.header("Access-Control-Allow-Origin", "*")*/
 					.build();
 		} else {
 			Map<String, String> msg = new HashMap<>();
@@ -123,7 +123,7 @@ public class PackageResource {
 			return Response
 					.status(200)
 					.entity(jsonString)
-					.header("Access-Control-Allow-Origin", "*")
+					/*.header("Access-Control-Allow-Origin", "*")*/
 					.build();
 		} else {
 			Map<String, String> msg = new HashMap<>();
@@ -158,7 +158,7 @@ public class PackageResource {
 			return Response  
 					.status(200)
 					.entity(jsonString)
-					.header("Access-Control-Allow-Origin", "*")
+					/*.header("Access-Control-Allow-Origin", "*")*/
 					.build();
 		
 		} else {

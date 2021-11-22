@@ -41,7 +41,7 @@
 			return Response
 					.status(200)
 					.entity(jsonString)
-					.header("Access-Control-Allow-Origin", "*")
+					/*.header("Access-Control-Allow-Origin", "*")*/
 					.build();
 		}
 		
@@ -63,7 +63,7 @@
 				return Response
 						.status(200)
 						.entity(jsonString)
-						.header("Access-Control-Allow-Origin", "*")
+						/*.header("Access-Control-Allow-Origin", "*")*/
 						.build();
 				
 			} else {
@@ -74,7 +74,7 @@
 				return Response
 						.status(400)
 						.entity(errorString)
-						.header("Access-Control-Allow-Origin", "*")
+						/*.header("Access-Control-Allow-Origin", "*")*/
 						.build();
 			}
 		}
@@ -137,7 +137,7 @@
 				return Response  
 						.status(200)
 						.entity(jsonString)
-						.header("Access-Control-Allow-Origin", "*")
+						/*.header("Access-Control-Allow-Origin", "*")*/
 						.build();
 			
 			} else {
@@ -177,7 +177,7 @@
 				return Response  
 						.status(200)
 						.entity(jsonString)
-						.header("Access-Control-Allow-Origin", "*")
+						/*.header("Access-Control-Allow-Origin", "*")*/
 						.build();
 			
 			} else {
@@ -219,7 +219,7 @@
 				return Response  
 						.status(200)
 						.entity(jsonString)
-						.header("Access-Control-Allow-Origin", "*")
+						/*.header("Access-Control-Allow-Origin", "*")*/
 						.build();
 			
 			} else {
@@ -259,7 +259,7 @@
 				return Response
 						.status(200)
 						.entity(jsonString)
-						.header("Access-Control-Allow-Origin", "*")
+						/*.header("Access-Control-Allow-Origin", "*")*/
 						.build();
 			} else {
 				Map<String, String> msg = new HashMap<>();
@@ -298,7 +298,7 @@
 				return Response  
 						.status(200)
 						.entity(jsonString)
-						.header("Access-Control-Allow-Origin", "*")
+						/*.header("Access-Control-Allow-Origin", "*")*/
 						.build();
 			
 			} else {

@@ -4,20 +4,18 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-
 import com.mysql.cj.jdbc.Driver;
 
 public class DbConnection {
 	
 	private static Logger logger = LogManager.getLogger(DbConnection.class);
-//	private static final String DB_URL="jdbc:mysql://localhost:3306/tourismapp";
-//	private static final String DB_USER="root";
-//	private static final String DB_PASSWORD ="12345";
+	private static final String DB_URL="jdbc:mysql://localhost:3306/tourismapp";
+	private static final String DB_USER="root";
+	private static final String DB_PASSWORD ="12345";
 
-	private static final String DB_URL="jdbc:mysql://us-cdbr-east-04.cleardb.com/heroku_8948ce830834efe";
-	private static final String DB_USER="baca4251f43b6a";
-	private static final String DB_PASSWORD ="4942cd07";
+//	private static final String DB_URL="jdbc:mysql://us-cdbr-east-04.cleardb.com/heroku_8948ce830834efe";
+//	private static final String DB_USER="baca4251f43b6a";
+//	private static final String DB_PASSWORD ="4942cd07";
 
 	
 	private static DbConnection newInstance = null;

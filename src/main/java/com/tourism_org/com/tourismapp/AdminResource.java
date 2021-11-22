@@ -37,7 +37,7 @@ public class AdminResource {
 		return Response
 				.status(200)
 				.entity(jsonString)
-				.header("Access-Control-Allow-Origin", "*")
+				/*.header("Access-Control-Allow-Origin", "*")*/
 				.build();
 	}
 		
@@ -58,7 +58,7 @@ public class AdminResource {
 			return Response
 					.status(200)
 					.entity(jsonString)
-					.header("Access-Control-Allow-Origin", "*")
+					/*.header("Access-Control-Allow-Origin", "*")*/
 					.build();
 		} else {
 			Map<String, String> errorMsg = new HashMap<>();
@@ -122,7 +122,7 @@ public class AdminResource {
 			return Response  
 					.status(200)
 					.entity(jsonString)
-					.header("Access-Control-Allow-Origin", "*")
+					/*.header("Access-Control-Allow-Origin", "*")*/
 					.build();
 		
 		} else {
@@ -162,7 +162,7 @@ public class AdminResource {
 			return Response  
 					.status(200)
 					.entity(jsonString)
-					.header("Access-Control-Allow-Origin", "*")
+					/*.header("Access-Control-Allow-Origin", "*")*/
 					.build();
 		
 		} else {
@@ -201,7 +201,7 @@ public class AdminResource {
 			return Response  
 					.status(200)
 					.entity(jsonString)
-					.header("Access-Control-Allow-Origin", "*")
+					/*.header("Access-Control-Allow-Origin", "*")*/
 					.build();
 		
 		} else {
@@ -242,7 +242,7 @@ public class AdminResource {
 			return Response
 					.status(200)
 					.entity(jsonString)
-					.header("Access-Control-Allow-Origin", "*")
+					/*.header("Access-Control-Allow-Origin", "*")*/
 					.build();
 		} else {
 			Map<String, String> msg = new HashMap<>();
@@ -281,7 +281,7 @@ public class AdminResource {
 			return Response  
 					.status(200)
 					.entity(jsonString)
-					.header("Access-Control-Allow-Origin", "*")
+					/*.header("Access-Control-Allow-Origin", "*")*/
 					.build();
 		
 		} else {
