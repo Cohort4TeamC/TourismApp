@@ -31,17 +31,17 @@ public class AdminDaoTest {
 		assertNotNull(actual);
 	}
 	
-	@Test
-	public void testLogin() {
-		
-		String email ="kumar.varun@gmail.com";
-		String password ="kumar12345";
-		
-		AdminDao adminDao = new AdminDao();
-		admin actual =adminDao.adminAuth(email, password);
-		
-		assertNotNull(actual);
-	}
+//	@Test
+//	public void testLogin() {
+//		
+//		String email ="kumar.varun@gmail.com";
+//		String password ="kumar12345";
+//		
+//		AdminDao adminDao = new AdminDao();
+//		admin actual =adminDao.adminAuth(email, password);
+//		
+//		assertNotNull(actual);
+//	}
 	
 	@Test
 	public void testForgotpassword() {
