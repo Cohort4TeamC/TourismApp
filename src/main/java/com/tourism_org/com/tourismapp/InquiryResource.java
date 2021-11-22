@@ -35,7 +35,7 @@ public class InquiryResource {
 			return Response
 					.status(200)
 					.entity(jsonString)
-					/*.header("Access-Control-Allow-Origin", "*")*/
+					.header("Access-Control-Allow-Origin", "*")
 					.build();
 		}
 	
@@ -73,7 +73,7 @@ public class InquiryResource {
 			return Response  
 					.status(200)
 					.entity(jsonString)
-					/*.header("Access-Control-Allow-Origin", "*")*/
+					.header("Access-Control-Allow-Origin", "*")
 					.build();
 		
 		} else {

@@ -9,14 +9,17 @@ import com.mysql.cj.jdbc.Driver;
 public class DbConnection {
 	
 	private static Logger logger = LogManager.getLogger(DbConnection.class);
-	private static final String DB_URL="jdbc:mysql://localhost:3306/tourismapp";
-	private static final String DB_USER="root";
-	private static final String DB_PASSWORD ="12345";
+//	private static final String DB_URL="jdbc:mysql://localhost:3306/tourismapp";
+//	private static final String DB_USER="root";
+//	private static final String DB_PASSWORD ="12345";
 
 //	private static final String DB_URL="jdbc:mysql://us-cdbr-east-04.cleardb.com/heroku_8948ce830834efe";
 //	private static final String DB_USER="baca4251f43b6a";
 //	private static final String DB_PASSWORD ="4942cd07";
 
+	private static final String DB_URL="jdbc:mysql://us-cdbr-east-04.cleardb.com/heroku_779b0e65ed1f1db";
+	private static final String DB_USER="b6e92ff63b9fce";
+	private static final String DB_PASSWORD ="4df5cc3f";
 	
 	private static DbConnection newInstance = null;
 
