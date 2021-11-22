@@ -8,22 +8,9 @@ import com.mysql.cj.jdbc.Driver;
 
 public class DbConnection {
 	
-<<<<<<< HEAD
-	private static Logger logger = LogManager.getLogger(DbConnection.class);
-=======
-//	private static Logger logger = LogManager.getLogger(DbConnection.class);
->>>>>>> cb602b23991c4fd6718740ad386f667e2cfb45b5
-//	private static final String DB_URL="jdbc:mysql://localhost:3306/tourismapp";
-//	private static final String DB_USER="root";
-//	private static final String DB_PASSWORD ="12345";
 
-//	private static final String DB_URL="jdbc:mysql://us-cdbr-east-04.cleardb.com/heroku_8948ce830834efe";
-//	private static final String DB_USER="baca4251f43b6a";
-//	private static final String DB_PASSWORD ="4942cd07";
-	
-	private static final String DB_URL="jdbc:mysql://us-cdbr-east-04.cleardb.com/heroku_8948ce830834efe";
-	private static final String DB_USER="baca4251f43b6a"; 
-	private static final String DB_PASSWORD ="4942cd07";
+	private static Logger logger = LogManager.getLogger(DbConnection.class);
+
 
 	private static final String DB_URL="jdbc:mysql://us-cdbr-east-04.cleardb.com/heroku_779b0e65ed1f1db";
 	private static final String DB_USER="b6e92ff63b9fce";

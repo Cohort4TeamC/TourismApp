@@ -162,7 +162,7 @@ import com.tourism_org.com.tourismapp.dao.UserDao;
 				 String encryptedPassword = Sha1Encrypt (password);
 				    
 				 String sql =  "UPDATE customer SET `Fname` = ?, `Lname`=?, `Phone`=?, `Email`=?, `Address`=?, `Srilankan`=?,"
-				 		+ " `Country`=?, `Nationality`=?, `PassportOrNIC`=?, `password`=? WHERE `Id`=?";
+				 		+ " `Country`=?, `Nationality`=?, `PassportOrNIC`=?, `password`=? WHERE `customer_id`=?";
 					
 				Connection conn = DbConnection.getInstance().getConnection();
 				PreparedStatement stmt = conn.prepareStatement(sql);
@@ -202,7 +202,7 @@ import com.tourism_org.com.tourismapp.dao.UserDao;
 			
 			 try {		
 
-		      String sql ="delete from customer where Id = ?";
+		      String sql ="delete from customer where customer_id = ?";
 		      PreparedStatement stmt = connection.prepareStatement(sql);
 		      stmt.setInt(1,id);
 		      

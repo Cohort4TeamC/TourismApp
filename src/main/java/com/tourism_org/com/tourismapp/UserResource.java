@@ -51,10 +51,10 @@
 		 * @return
 		 */
 			
-		@Path("{Id}")
+		@Path("{customer_id}")
 		@GET
 		@Produces(MediaType.APPLICATION_JSON)
-		public Response getaUser(@PathParam("Id") int id) {
+		public Response getaUser(@PathParam("customer_id") int id) {
 			UserDao userDao = new UserDao();
 			User user = userDao.getaUser(id);
 			
@@ -281,8 +281,8 @@
 		 */
 		
 		@DELETE
-		@Path("/{Id}")
-		public Response deluser (@PathParam("Id") int id) {
+		@Path("/{customer_id}")
+		public Response deluser (@PathParam("customer_id") int id) {
 
 			UserDao userDao = new UserDao();
 			User user = userDao.getaUser(id);	
