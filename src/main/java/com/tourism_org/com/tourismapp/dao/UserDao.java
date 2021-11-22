@@ -104,7 +104,7 @@ import com.tourism_org.com.tourismapp.dao.UserDao;
 		    	  
 		    	    rows ++;
 		    	
-					User.setId(resultSet.getInt("Id"));
+					User.setId(resultSet.getInt("customer_id"));
 					User.setFname(resultSet.getString("Fname"));
 					User.setLname(resultSet.getString("Lname"));
 					User.setPhone(resultSet.getInt("Phone"));
